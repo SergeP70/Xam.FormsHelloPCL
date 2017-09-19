@@ -12,6 +12,10 @@ namespace Xam.FormsHelloPCL
         public MainPage()
         {
             InitializeComponent();
+
+            var message = DependencyService.Get<IMessageService>();
+            lblWelcome.Text = "Hello, I am " + message.GetWelcomeMessage();
+
         }
     }
 }
