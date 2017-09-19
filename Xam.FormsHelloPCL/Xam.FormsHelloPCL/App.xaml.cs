@@ -7,6 +7,11 @@ using Xamarin.Forms;
 
 namespace Xam.FormsHelloPCL
 {
+    public interface IMessageService
+    {
+        string GetWelcomeMessage();
+    }
+
     public partial class App : Application
     {
         public App()
